@@ -1,0 +1,23 @@
+# Caches
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Model / checkpoint files (archived separately, not in git)
+*.pt
+*.pth
+*.npy
+*.npz
+*.pkl
+*.h5
+
+# Figure binaries
+*.png
+*.tiff
+*.jpg
+
+# Virtual environments / OS
+venv/
+.env
+.DS_Store
+Thumbs.db
