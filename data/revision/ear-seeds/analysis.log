@@ -1,0 +1,1500 @@
+{
+ "L1_addr": 0.3859424516558647,
+ "L1_addr_max": 0.5491601228713989,
+ "L1_gate": 0.021880814689211547,
+ "L1_gate_max": 0.03667740523815155,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s0_dk32.pt",
+ "decay_gate_mean": 0.16547178011387587,
+ "decay_gate_mean_max": 0.18154720962047577,
+ "dk": 32,
+ "dv": 128,
+ "erase_gate_max": 0.08112044003792107,
+ "erase_gate_max_max": 0.09689627587795258,
+ "erase_gate_mean": 0.05283929081633687,
+ "erase_gate_mean_max": 0.060511715710163116,
+ "erase_gate_min": 0.030976456124335527,
+ "erase_gate_min_max": 0.03606729581952095,
+ "g_max": 0.06114219385199249,
+ "g_max_max": 0.0733150765299797,
+ "g_mean": 0.05030530993826687,
+ "g_mean_max": 0.05713655799627304,
+ "g_min": 0.041193928802385926,
+ "g_min_max": 0.049285706132650375,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.3735874881967902,
+ "mu_max": 0.5306648015975952,
+ "multiplier": 1.3927955834242305,
+ "multiplier_max": 2.0147634396001775,
+ "n_batch": 16,
+ "resid_addr": 2.1999903676572785e-07,
+ "resid_addr_max": 2.686498703496909e-07,
+ "resid_gate": 0.9588060565292835,
+ "resid_gate_max": 0.9685122966766357,
+ "resid_gate_pred": 0.9588060707319528,
+ "resid_gate_pred_max": 0.9685122556984425,
+ "slope_addr": 0.3859425347045771,
+ "slope_addr_max": 0.5491602538014063,
+ "slope_gate": 0.5379649081225492,
+ "slope_gate_max": 0.8422683094358108,
+ "step": 4000,
+ "write_gate_mean": 0.9603985100984573,
+ "write_gate_mean_max": 0.9645673036575317
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s0_dk32.json
+          as trained  q_clean=0.9995  q_edit=1.0000  q_del=0.0000  stale_p=0.9793  rank=0.0
+           gate 0.00  q_clean=0.9995  q_edit=1.0000  q_del=0.0000  stale_p=0.9857  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0031  stale_p=0.9060  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0125  stale_p=0.4949  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.1865  stale_p=0.0681  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9927  stale_p=0.0063  rank=82.6
+   no memory readout  q_clean=0.0031  q_edit=0.0042  q_del=0.9948  stale_p=0.0039  rank=126.1
+      erase disabled  q_clean=0.9995  q_edit=1.0000  q_del=0.0000  stale_p=0.9857  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s0_dk32.json
+{
+ "L1_addr": 0.3209330728277564,
+ "L1_addr_max": 0.412949800491333,
+ "L1_gate": 0.016525453131180257,
+ "L1_gate_max": 0.025089330971240997,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s1_dk32.pt",
+ "decay_gate_mean": 0.07341942051425576,
+ "decay_gate_mean_max": 0.0940205454826355,
+ "dk": 32,
+ "dv": 128,
+ "erase_gate_max": 0.0809762473218143,
+ "erase_gate_max_max": 0.09469044953584671,
+ "erase_gate_mean": 0.05281277094036341,
+ "erase_gate_mean_max": 0.05983508378267288,
+ "erase_gate_min": 0.032399307237938046,
+ "erase_gate_min_max": 0.040618859231472015,
+ "g_max": 0.06043190881609917,
+ "g_max_max": 0.07312630116939545,
+ "g_mean": 0.050390004413202405,
+ "g_mean_max": 0.05723511427640915,
+ "g_min": 0.040481001837179065,
+ "g_min_max": 0.049406565725803375,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.30674773920327425,
+ "mu_max": 0.40681886672973633,
+ "multiplier": 1.2899778838552902,
+ "multiplier_max": 1.7517263517990584,
+ "n_batch": 16,
+ "resid_addr": 2.1763320567913524e-07,
+ "resid_addr_max": 2.8461155920922465e-07,
+ "resid_gate": 0.9595190025866032,
+ "resid_gate_max": 0.9670776128768921,
+ "resid_gate_pred": 0.9595189976971596,
+ "resid_gate_pred_max": 0.9670776501297951,
+ "slope_addr": 0.32093314451032423,
+ "slope_addr_max": 0.41294989894626116,
+ "slope_gate": 0.41739826719366624,
+ "slope_gate_max": 0.7089766226755552,
+ "step": 4000,
+ "write_gate_mean": 0.9198478236794472,
+ "write_gate_mean_max": 0.9322794675827026
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s1_dk32.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9789  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9853  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9082  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0115  stale_p=0.5038  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.1813  stale_p=0.0692  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9896  stale_p=0.0053  rank=77.9
+   no memory readout  q_clean=0.0052  q_edit=0.0031  q_del=0.9979  stale_p=0.0039  rank=121.1
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9853  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s1_dk32.json
+{
+ "L1_addr": 0.35580116510391235,
+ "L1_addr_max": 0.43311187624931335,
+ "L1_gate": 0.022876376868225634,
+ "L1_gate_max": 0.028035925701260567,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s2_dk32.pt",
+ "decay_gate_mean": 0.05720524792559445,
+ "decay_gate_mean_max": 0.0685415118932724,
+ "dk": 32,
+ "dv": 128,
+ "erase_gate_max": 0.09505683043971658,
+ "erase_gate_max_max": 0.11111626774072647,
+ "erase_gate_mean": 0.05947176367044449,
+ "erase_gate_mean_max": 0.06624157726764679,
+ "erase_gate_min": 0.03483611752744764,
+ "erase_gate_min_max": 0.040926262736320496,
+ "g_max": 0.06983564840629697,
+ "g_max_max": 0.07705622166395187,
+ "g_mean": 0.05698715359903872,
+ "g_mean_max": 0.06266652047634125,
+ "g_min": 0.0443369650747627,
+ "g_min_max": 0.05060499161481857,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.33645497262477875,
+ "mu_max": 0.42326876521110535,
+ "multiplier": 1.4656463012441587,
+ "multiplier_max": 1.790528169391582,
+ "n_batch": 16,
+ "resid_addr": 2.073296379023759e-07,
+ "resid_addr_max": 2.8500895155048056e-07,
+ "resid_gate": 0.9556630365550518,
+ "resid_gate_max": 0.9595010280609131,
+ "resid_gate_pred": 0.9556630349252373,
+ "resid_gate_pred_max": 0.9595009982585907,
+ "slope_addr": 0.35580123923394463,
+ "slope_addr_max": 0.4331119278802786,
+ "slope_gate": 0.51678678607949,
+ "slope_gate_max": 0.6283750216253875,
+ "step": 4000,
+ "write_gate_mean": 0.9020062498748302,
+ "write_gate_mean_max": 0.9179761409759521
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s2_dk32.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0010  stale_p=0.9760  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0010  stale_p=0.9840  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0042  stale_p=0.9030  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0281  stale_p=0.4987  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.1729  stale_p=0.0688  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9958  stale_p=0.0053  rank=82.6
+   no memory readout  q_clean=0.0047  q_edit=0.0031  q_del=0.9979  stale_p=0.0039  rank=130.5
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0010  stale_p=0.9840  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s2_dk32.json
+{
+ "L1_addr": 0.3176255989819765,
+ "L1_addr_max": 0.39466744661331177,
+ "L1_gate": 0.019128591986373067,
+ "L1_gate_max": 0.02931247651576996,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s3_dk32.pt",
+ "decay_gate_mean": 0.060422351816669106,
+ "decay_gate_mean_max": 0.06897249072790146,
+ "dk": 32,
+ "dv": 128,
+ "erase_gate_max": 0.08398626046255231,
+ "erase_gate_max_max": 0.10065006464719772,
+ "erase_gate_mean": 0.05657014483585954,
+ "erase_gate_mean_max": 0.06247113272547722,
+ "erase_gate_min": 0.03483928297646344,
+ "erase_gate_min_max": 0.04301471263170242,
+ "g_max": 0.06429466605186462,
+ "g_max_max": 0.07632589340209961,
+ "g_mean": 0.05416923458687961,
+ "g_mean_max": 0.05958688259124756,
+ "g_min": 0.04305715090595186,
+ "g_min_max": 0.05267670750617981,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.3066314831376076,
+ "mu_max": 0.3912111520767212,
+ "multiplier": 1.4161430283505274,
+ "multiplier_max": 1.8662130886181172,
+ "n_batch": 16,
+ "resid_addr": 2.029422896399069e-07,
+ "resid_addr_max": 2.506135103885754e-07,
+ "resid_gate": 0.9569428376853466,
+ "resid_gate_max": 0.9655434489250183,
+ "resid_gate_pred": 0.9569428488612175,
+ "resid_gate_pred_max": 0.9655434265732765,
+ "slope_addr": 0.31762566833104566,
+ "slope_addr_max": 0.39466751718536325,
+ "slope_gate": 0.45215706263157823,
+ "slope_gate_max": 0.7056137690184172,
+ "step": 4000,
+ "write_gate_mean": 0.9102419205009937,
+ "write_gate_mean_max": 0.921142578125
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s3_dk32.json
+          as trained  q_clean=0.9995  q_edit=1.0000  q_del=0.0031  stale_p=0.9767  rank=0.0
+           gate 0.00  q_clean=0.9995  q_edit=1.0000  q_del=0.0021  stale_p=0.9837  rank=0.0
+           gate 0.25  q_clean=0.9995  q_edit=1.0000  q_del=0.0042  stale_p=0.9056  rank=0.0
+           gate 0.50  q_clean=0.9995  q_edit=1.0000  q_del=0.0208  stale_p=0.5008  rank=0.0
+           gate 0.75  q_clean=0.9995  q_edit=1.0000  q_del=0.1740  stale_p=0.0682  rank=0.0
+           gate 1.00  q_clean=0.9995  q_edit=1.0000  q_del=0.9979  stale_p=0.0051  rank=77.6
+   no memory readout  q_clean=0.0052  q_edit=0.0052  q_del=0.9958  stale_p=0.0039  rank=122.3
+      erase disabled  q_clean=0.9995  q_edit=1.0000  q_del=0.0021  stale_p=0.9837  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s3_dk32.json
+{
+ "L1_addr": 1.4580212148729288e-07,
+ "L1_addr_max": 1.9633657188933284e-07,
+ "L1_gate": 0.00032326901236956473,
+ "L1_gate_max": 0.0005223647458478808,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s0_dk256.pt",
+ "decay_gate_mean": 0.7057831399142742,
+ "decay_gate_mean_max": 0.747403621673584,
+ "dk": 256,
+ "dv": 128,
+ "erase_gate_max": 0.8877855725586414,
+ "erase_gate_max_max": 0.888915479183197,
+ "erase_gate_mean": 0.8815112970769405,
+ "erase_gate_mean_max": 0.8815547823905945,
+ "erase_gate_min": 0.8743407726287842,
+ "erase_gate_min_max": 0.8758649826049805,
+ "g_max": 0.8819028846919537,
+ "g_max_max": 0.8821406364440918,
+ "g_mean": 0.8815495148301125,
+ "g_mean_max": 0.8817424774169922,
+ "g_min": 0.8811410255730152,
+ "g_min_max": 0.8814898729324341,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 1.8079299479722977e-07,
+ "mu_max": 2.384185791015625e-07,
+ "multiplier": 2531.8466572097987,
+ "multiplier_max": 4643.237919487847,
+ "n_batch": 16,
+ "resid_addr": 1.4284021876420638e-07,
+ "resid_addr_max": 2.323607901644209e-07,
+ "resid_gate": 0.11885896325111389,
+ "resid_gate_max": 0.1192745715379715,
+ "resid_gate_pred": 0.1188589595258236,
+ "resid_gate_pred_max": 0.1192745566368103,
+ "slope_addr": 1.4580214397753744e-07,
+ "slope_addr_max": 1.96336606997054e-07,
+ "slope_gate": 0.00036687829332736257,
+ "slope_gate_max": 0.0005926846341144654,
+ "step": 4000,
+ "write_gate_mean": 0.9947150386869907,
+ "write_gate_mean_max": 0.9955636858940125
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s0_dk256.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0094  stale_p=0.0253  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9979  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9131  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.1733  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9958  stale_p=0.0038  rank=130.3
+   no memory readout  q_clean=0.0021  q_edit=0.0021  q_del=0.9958  stale_p=0.0038  rank=130.3
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s0_dk256.json
+{
+ "L1_addr": 0.23808603733778,
+ "L1_addr_max": 0.3452891409397125,
+ "L1_gate": 0.04548588255420327,
+ "L1_gate_max": 0.06538672745227814,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s0_dk64.pt",
+ "decay_gate_mean": 0.11466486006975174,
+ "decay_gate_mean_max": 0.14035749435424805,
+ "dk": 64,
+ "dv": 128,
+ "erase_gate_max": 0.26803264301270247,
+ "erase_gate_max_max": 0.28591954708099365,
+ "erase_gate_mean": 0.20069121476262808,
+ "erase_gate_mean_max": 0.21378080546855927,
+ "erase_gate_min": 0.1358380294404924,
+ "erase_gate_min_max": 0.15875184535980225,
+ "g_max": 0.2154136998578906,
+ "g_max_max": 0.22689679265022278,
+ "g_mean": 0.19396659173071384,
+ "g_mean_max": 0.20710620284080505,
+ "g_min": 0.16930598206818104,
+ "g_min_max": 0.1875283122062683,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.2306191297248006,
+ "mu_max": 0.33035725355148315,
+ "multiplier": 1.1326667417078642,
+ "multiplier_max": 1.4476845109838292,
+ "n_batch": 16,
+ "resid_addr": 1.9367837822414913e-07,
+ "resid_addr_max": 2.718539064971992e-07,
+ "resid_gate": 0.8306940011680126,
+ "resid_gate_max": 0.8580895662307739,
+ "resid_gate_pred": 0.8306940160691738,
+ "resid_gate_pred_max": 0.8580895662307739,
+ "slope_addr": 0.23808608141634735,
+ "slope_addr_max": 0.34528920268223334,
+ "slope_gate": 0.26941259069888407,
+ "slope_gate_max": 0.38739117165367704,
+ "step": 4000,
+ "write_gate_mean": 0.9493487291038036,
+ "write_gate_mean_max": 0.9592227339744568
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s0_dk64.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9922  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9993  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9858  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0010  stale_p=0.7623  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0312  stale_p=0.1139  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9927  stale_p=0.0046  rank=99.0
+   no memory readout  q_clean=0.0042  q_edit=0.0042  q_del=0.9885  stale_p=0.0040  rank=125.5
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9993  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s0_dk64.json
+{
+ "L1_addr": 0.2461604867130518,
+ "L1_addr_max": 0.32157742977142334,
+ "L1_gate": 0.04717887518927455,
+ "L1_gate_max": 0.06014038622379303,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s1_dk64.pt",
+ "decay_gate_mean": 0.0997138419188559,
+ "decay_gate_mean_max": 0.11340516805648804,
+ "dk": 64,
+ "dv": 128,
+ "erase_gate_max": 0.26034754142165184,
+ "erase_gate_max_max": 0.292305052280426,
+ "erase_gate_mean": 0.1874484121799469,
+ "erase_gate_mean_max": 0.20098397135734558,
+ "erase_gate_min": 0.12551723793148994,
+ "erase_gate_min_max": 0.1526346206665039,
+ "g_max": 0.20352710038423538,
+ "g_max_max": 0.2243199199438095,
+ "g_mean": 0.180221950635314,
+ "g_mean_max": 0.19375836849212646,
+ "g_min": 0.15709952171891928,
+ "g_min_max": 0.1866314560174942,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.24054818134754896,
+ "mu_max": 0.319408655166626,
+ "multiplier": 1.2392715959896914,
+ "multiplier_max": 1.459930393758371,
+ "n_batch": 16,
+ "resid_addr": 1.6903629518338903e-07,
+ "resid_addr_max": 2.3568938445350796e-07,
+ "resid_gate": 0.842900462448597,
+ "resid_gate_max": 0.8712781667709351,
+ "resid_gate_pred": 0.8429004810750484,
+ "resid_gate_pred_max": 0.8712781071662903,
+ "slope_addr": 0.2461605301350417,
+ "slope_addr_max": 0.3215775064414755,
+ "slope_gate": 0.30361138728855946,
+ "slope_gate_max": 0.44020860971617365,
+ "step": 4000,
+ "write_gate_mean": 0.943650621920824,
+ "write_gate_mean_max": 0.9511842727661133
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s1_dk64.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9934  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9992  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9856  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.7613  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0417  stale_p=0.1119  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9938  stale_p=0.0045  rank=98.7
+   no memory readout  q_clean=0.0063  q_edit=0.0042  q_del=0.9969  stale_p=0.0039  rank=126.1
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9992  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s1_dk64.json
+{
+ "L1_addr": 0.20810987195000052,
+ "L1_addr_max": 0.2777286469936371,
+ "L1_gate": 0.038550226599909365,
+ "L1_gate_max": 0.04971294850111008,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s2_dk64.pt",
+ "decay_gate_mean": 0.05439043906517327,
+ "decay_gate_mean_max": 0.06543512642383575,
+ "dk": 64,
+ "dv": 128,
+ "erase_gate_max": 0.2551353042945266,
+ "erase_gate_max_max": 0.2898273468017578,
+ "erase_gate_mean": 0.1813780004158616,
+ "erase_gate_mean_max": 0.19989874958992004,
+ "erase_gate_min": 0.12232565833255649,
+ "erase_gate_min_max": 0.13736292719841003,
+ "g_max": 0.20248387567698956,
+ "g_max_max": 0.23850688338279724,
+ "g_mean": 0.17616197001188993,
+ "g_mean_max": 0.19268575310707092,
+ "g_min": 0.15063450299203396,
+ "g_min_max": 0.16429248452186584,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.2002669656649232,
+ "mu_max": 0.2685394287109375,
+ "multiplier": 1.2454165103230077,
+ "multiplier_max": 1.5497053952016249,
+ "n_batch": 16,
+ "resid_addr": 1.497005834849574e-07,
+ "resid_addr_max": 2.1848114784006611e-07,
+ "resid_gate": 0.8493654727935791,
+ "resid_gate_max": 0.8747517466545105,
+ "resid_gate_pred": 0.8493654914200306,
+ "resid_gate_pred_max": 0.8747517615556717,
+ "slope_addr": 0.20810990178492686,
+ "slope_addr_max": 0.27772866354755543,
+ "slope_gate": 0.2573819435862828,
+ "slope_gate_max": 0.3443882240223761,
+ "step": 4000,
+ "write_gate_mean": 0.9123556315898895,
+ "write_gate_mean_max": 0.9259219169616699
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s2_dk64.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9939  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9991  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9859  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.7667  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0437  stale_p=0.1139  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9979  stale_p=0.0045  rank=96.1
+   no memory readout  q_clean=0.0047  q_edit=0.0052  q_del=0.9990  stale_p=0.0039  rank=125.1
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9991  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s2_dk64.json
+{
+ "L1_addr": 0.21734999911859632,
+ "L1_addr_max": 0.3495829701423645,
+ "L1_gate": 0.0411223650444299,
+ "L1_gate_max": 0.07014874368906021,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s3_dk64.pt",
+ "decay_gate_mean": 0.07691578567028046,
+ "decay_gate_mean_max": 0.0968213602900505,
+ "dk": 64,
+ "dv": 128,
+ "erase_gate_max": 0.2634588424116373,
+ "erase_gate_max_max": 0.301821768283844,
+ "erase_gate_mean": 0.19056179001927376,
+ "erase_gate_mean_max": 0.20828291773796082,
+ "erase_gate_min": 0.1261734371073544,
+ "erase_gate_min_max": 0.135903999209404,
+ "g_max": 0.20605237502604723,
+ "g_max_max": 0.23186227679252625,
+ "g_mean": 0.18420722614973783,
+ "g_mean_max": 0.20093068480491638,
+ "g_min": 0.16336224880069494,
+ "g_min_max": 0.18175813555717468,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.21006633481010795,
+ "mu_max": 0.332854300737381,
+ "multiplier": 1.166022772385387,
+ "multiplier_max": 1.361112066821418,
+ "n_batch": 16,
+ "resid_addr": 1.5088934413043376e-07,
+ "resid_addr_max": 2.815319248838932e-07,
+ "resid_gate": 0.836637731641531,
+ "resid_gate_max": 0.8571676015853882,
+ "resid_gate_pred": 0.8366377456113696,
+ "resid_gate_pred_max": 0.8571676164865494,
+ "slope_addr": 0.2173500372370151,
+ "slope_addr_max": 0.3495830534894594,
+ "slope_gate": 0.250961884688538,
+ "slope_gate_max": 0.40373374615764474,
+ "step": 4000,
+ "write_gate_mean": 0.9312918335199356,
+ "write_gate_mean_max": 0.9457499384880066
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s3_dk64.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9941  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9994  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9875  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.7758  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0365  stale_p=0.1186  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9896  stale_p=0.0049  rank=89.9
+   no memory readout  q_clean=0.0021  q_edit=0.0052  q_del=0.9938  stale_p=0.0039  rank=123.0
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9994  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s3_dk64.json
+{
+ "L1_addr": 0.3805140182375908,
+ "L1_addr_max": 0.4958939254283905,
+ "L1_gate": 0.02375538687920198,
+ "L1_gate_max": 0.03628484532237053,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s4_dk32.pt",
+ "decay_gate_mean": 0.06766493106260896,
+ "decay_gate_mean_max": 0.0798940360546112,
+ "dk": 32,
+ "dv": 128,
+ "erase_gate_max": 0.09357075346633792,
+ "erase_gate_max_max": 0.11503197252750397,
+ "erase_gate_mean": 0.05677692755125463,
+ "erase_gate_mean_max": 0.060747407376766205,
+ "erase_gate_min": 0.034717297297902405,
+ "erase_gate_min_max": 0.04135005548596382,
+ "g_max": 0.06932118069380522,
+ "g_max_max": 0.09032532572746277,
+ "g_mean": 0.05409595905803144,
+ "g_mean_max": 0.05905506759881973,
+ "g_min": 0.042884134920313954,
+ "g_min_max": 0.05122663825750351,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.36726210825145245,
+ "mu_max": 0.49033576250076294,
+ "multiplier": 1.4694120413299854,
+ "multiplier_max": 2.045587189421759,
+ "n_batch": 16,
+ "resid_addr": 1.9767246817181672e-07,
+ "resid_addr_max": 2.8694199727397063e-07,
+ "resid_gate": 0.9571158699691296,
+ "resid_gate_max": 0.9621092081069946,
+ "resid_gate_pred": 0.9571158648468554,
+ "resid_gate_pred_max": 0.9621092975139618,
+ "slope_addr": 0.38051409262689995,
+ "slope_addr_max": 0.4958939845435601,
+ "slope_gate": 0.5559364613532263,
+ "slope_gate_max": 0.7803117966078231,
+ "step": 4000,
+ "write_gate_mean": 0.9134116098284721,
+ "write_gate_mean_max": 0.9244768023490906
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s4_dk32.json
+          as trained  q_clean=0.9990  q_edit=1.0000  q_del=0.0010  stale_p=0.9789  rank=0.0
+           gate 0.00  q_clean=0.9990  q_edit=1.0000  q_del=0.0000  stale_p=0.9859  rank=0.0
+           gate 0.25  q_clean=0.9990  q_edit=1.0000  q_del=0.0010  stale_p=0.9066  rank=0.0
+           gate 0.50  q_clean=0.9990  q_edit=1.0000  q_del=0.0115  stale_p=0.4965  rank=0.0
+           gate 0.75  q_clean=0.9990  q_edit=1.0000  q_del=0.1688  stale_p=0.0679  rank=0.0
+           gate 1.00  q_clean=0.9990  q_edit=1.0000  q_del=0.9927  stale_p=0.0053  rank=82.6
+   no memory readout  q_clean=0.0042  q_edit=0.0031  q_del=0.9979  stale_p=0.0039  rank=120.2
+      erase disabled  q_clean=0.9990  q_edit=1.0000  q_del=0.0000  stale_p=0.9859  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s4_dk32.json
+{
+ "L1_addr": 0.23406301345676184,
+ "L1_addr_max": 0.33556291460990906,
+ "L1_gate": 0.04436107992660254,
+ "L1_gate_max": 0.06523310393095016,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s4_dk64.pt",
+ "decay_gate_mean": 0.07755502220243216,
+ "decay_gate_mean_max": 0.08999407291412354,
+ "dk": 64,
+ "dv": 128,
+ "erase_gate_max": 0.2607001792639494,
+ "erase_gate_max_max": 0.28455081582069397,
+ "erase_gate_mean": 0.18744972348213196,
+ "erase_gate_mean_max": 0.19996361434459686,
+ "erase_gate_min": 0.12877856940031052,
+ "erase_gate_min_max": 0.1445922702550888,
+ "g_max": 0.20546291302889585,
+ "g_max_max": 0.2260122299194336,
+ "g_mean": 0.18110397644340992,
+ "g_mean_max": 0.19244562089443207,
+ "g_min": 0.15924219507724047,
+ "g_min_max": 0.1703186184167862,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.2257154891267419,
+ "mu_max": 0.3202858567237854,
+ "multiplier": 1.2013247708110923,
+ "multiplier_max": 1.5518571286785183,
+ "n_batch": 16,
+ "resid_addr": 1.7065264845683714e-07,
+ "resid_addr_max": 2.7826436621580797e-07,
+ "resid_gate": 0.8407578207552433,
+ "resid_gate_max": 0.8625256419181824,
+ "resid_gate_pred": 0.8407578058540821,
+ "resid_gate_pred_max": 0.8625255972146988,
+ "slope_addr": 0.2340630520662087,
+ "slope_addr_max": 0.3355629546121305,
+ "slope_gate": 0.27924039926350935,
+ "slope_gate_max": 0.3863839660949157,
+ "step": 4000,
+ "write_gate_mean": 0.9311707578599453,
+ "write_gate_mean_max": 0.9373235702514648
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s4_dk64.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9941  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9993  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9869  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.7749  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0281  stale_p=0.1218  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9938  stale_p=0.0051  rank=81.4
+   no memory readout  q_clean=0.0062  q_edit=0.0021  q_del=0.9896  stale_p=0.0043  rank=110.4
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9993  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s4_dk64.json
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/measure_gate_alignment.py", line 34, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+Traceback (most recent call last):
+  File "/root/autodl-tmp/dcgr3d-revision/experiments/gate_intervention.py", line 37, in <module>
+    from dcgr3d.data import VOCAB, make_ear
+ModuleNotFoundError: No module named 'dcgr3d'
+      case       loss      acc   n
+   trained    0.00058   1.0000   576
+ gate 0.00    0.00058   1.0000   576
+ gate 0.25    0.00058   1.0000   576
+ gate 0.50    0.00060   1.0000   576
+ gate 0.75    0.00062   1.0000   576
+ gate 0.90    0.00064   1.0000   576
+ gate 1.00    0.00066   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s0_dk64.json
+loss range over g in [0,1]: 0.000083
+      case       loss      acc   n
+   trained    0.00058   1.0000   576
+ gate 0.00    0.00058   1.0000   576
+ gate 0.25    0.00058   1.0000   576
+ gate 0.50    0.00060   1.0000   576
+ gate 0.75    0.00062   1.0000   576
+ gate 0.90    0.00064   1.0000   576
+ gate 1.00    0.00066   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s0_dk64.json
+loss range over g in [0,1]: 0.000083
+{
+ "L1_addr": 1.4235856937716562e-07,
+ "L1_addr_max": 1.6736811403461616e-07,
+ "L1_gate": 0.0003419766717343009,
+ "L1_gate_max": 0.0004912866861559451,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s1_dk256.pt",
+ "decay_gate_mean": 0.6979997493326664,
+ "decay_gate_mean_max": 0.7316543459892273,
+ "dk": 256,
+ "dv": 128,
+ "erase_gate_max": 0.888421542942524,
+ "erase_gate_max_max": 0.8909912705421448,
+ "erase_gate_mean": 0.8814176060259342,
+ "erase_gate_mean_max": 0.881472110748291,
+ "erase_gate_min": 0.8731655664741993,
+ "erase_gate_min_max": 0.8759543299674988,
+ "g_max": 0.8817854262888432,
+ "g_max_max": 0.8820325136184692,
+ "g_mean": 0.8814212158322334,
+ "g_mean_max": 0.8816168308258057,
+ "g_min": 0.8810832649469376,
+ "g_min_max": 0.8813573122024536,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 1.7829006537795067e-07,
+ "mu_max": 2.384185791015625e-07,
+ "multiplier": 2762.3561131051483,
+ "multiplier_max": 4007.3936601591054,
+ "n_batch": 16,
+ "resid_addr": 1.5201721925706124e-07,
+ "resid_addr_max": 2.036022692664119e-07,
+ "resid_gate": 0.11891672573983669,
+ "resid_gate_max": 0.11915553361177444,
+ "resid_gate_pred": 0.11891672760248184,
+ "resid_gate_pred_max": 0.11915552616119385,
+ "slope_addr": 1.4235858828599842e-07,
+ "slope_addr_max": 1.6736812401053372e-07,
+ "slope_gate": 0.0003881348346794896,
+ "slope_gate_max": 0.0005576907544571022,
+ "step": 4000,
+ "write_gate_mean": 0.994599886238575,
+ "write_gate_mean_max": 0.9952422380447388
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s1_dk256.json
+{
+ "L1_addr": 1.4235856937716562e-07,
+ "L1_addr_max": 1.6736811403461616e-07,
+ "L1_gate": 0.0003419766717343009,
+ "L1_gate_max": 0.0004912866861559451,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s1_dk256.pt",
+ "decay_gate_mean": 0.6979997493326664,
+ "decay_gate_mean_max": 0.7316543459892273,
+ "dk": 256,
+ "dv": 128,
+ "erase_gate_max": 0.888421542942524,
+ "erase_gate_max_max": 0.8909912705421448,
+ "erase_gate_mean": 0.8814176060259342,
+ "erase_gate_mean_max": 0.881472110748291,
+ "erase_gate_min": 0.8731655664741993,
+ "erase_gate_min_max": 0.8759543299674988,
+ "g_max": 0.8817854262888432,
+ "g_max_max": 0.8820325136184692,
+ "g_mean": 0.8814212158322334,
+ "g_mean_max": 0.8816168308258057,
+ "g_min": 0.8810832649469376,
+ "g_min_max": 0.8813573122024536,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 1.7829006537795067e-07,
+ "mu_max": 2.384185791015625e-07,
+ "multiplier": 2762.3561131051483,
+ "multiplier_max": 4007.3936601591054,
+ "n_batch": 16,
+ "resid_addr": 1.5201721925706124e-07,
+ "resid_addr_max": 2.036022692664119e-07,
+ "resid_gate": 0.11891672573983669,
+ "resid_gate_max": 0.11915553361177444,
+ "resid_gate_pred": 0.11891672760248184,
+ "resid_gate_pred_max": 0.11915552616119385,
+ "slope_addr": 1.4235858828599842e-07,
+ "slope_addr_max": 1.6736812401053372e-07,
+ "slope_gate": 0.0003881348346794896,
+ "slope_gate_max": 0.0005576907544571022,
+ "step": 4000,
+ "write_gate_mean": 0.994599886238575,
+ "write_gate_mean_max": 0.9952422380447388
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s1_dk256.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.0252  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9972  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.8980  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.1644  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9958  stale_p=0.0040  rank=123.4
+   no memory readout  q_clean=0.0031  q_edit=0.0052  q_del=0.9958  stale_p=0.0040  rank=123.4
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s1_dk256.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.0252  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9972  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.8980  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.1644  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9958  stale_p=0.0040  rank=123.4
+   no memory readout  q_clean=0.0031  q_edit=0.0052  q_del=0.9958  stale_p=0.0040  rank=123.4
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s1_dk256.json
+      case       loss      acc   n
+   trained    0.00007   1.0000   576
+ gate 0.00    0.00007   1.0000   576
+ gate 0.25    0.00007   1.0000   576
+ gate 0.50    0.00007   1.0000   576
+ gate 0.75    0.00007   1.0000   576
+ gate 0.90    0.00007   1.0000   576
+ gate 1.00    0.00007   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s1_dk256.json
+loss range over g in [0,1]: 0.000001
+      case       loss      acc   n
+   trained    0.00007   1.0000   576
+ gate 0.00    0.00007   1.0000   576
+ gate 0.25    0.00007   1.0000   576
+ gate 0.50    0.00007   1.0000   576
+ gate 0.75    0.00007   1.0000   576
+ gate 0.90    0.00007   1.0000   576
+ gate 1.00    0.00007   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s1_dk256.json
+loss range over g in [0,1]: 0.000001
+      case       loss      acc   n
+   trained    0.01044   1.0000   576
+ gate 0.00    0.01047   1.0000   576
+ gate 0.25    0.01054   1.0000   576
+ gate 0.50    0.01109   1.0000   576
+ gate 0.75    0.01211   1.0000   576
+ gate 0.90    0.01300   1.0000   576
+ gate 1.00    0.01374   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s1_dk32.json
+loss range over g in [0,1]: 0.003266
+      case       loss      acc   n
+   trained    0.01044   1.0000   576
+ gate 0.00    0.01047   1.0000   576
+ gate 0.25    0.01054   1.0000   576
+ gate 0.50    0.01109   1.0000   576
+ gate 0.75    0.01211   1.0000   576
+ gate 0.90    0.01300   1.0000   576
+ gate 1.00    0.01374   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s1_dk32.json
+loss range over g in [0,1]: 0.003266
+      case       loss      acc   n
+   trained    0.00056   1.0000   576
+ gate 0.00    0.00056   1.0000   576
+ gate 0.25    0.00056   1.0000   576
+ gate 0.50    0.00057   1.0000   576
+ gate 0.75    0.00059   1.0000   576
+ gate 0.90    0.00061   1.0000   576
+ gate 1.00    0.00063   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s1_dk64.json
+loss range over g in [0,1]: 0.000073
+      case       loss      acc   n
+   trained    0.00056   1.0000   576
+ gate 0.00    0.00056   1.0000   576
+ gate 0.25    0.00056   1.0000   576
+ gate 0.50    0.00057   1.0000   576
+ gate 0.75    0.00059   1.0000   576
+ gate 0.90    0.00061   1.0000   576
+ gate 1.00    0.00063   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s1_dk64.json
+loss range over g in [0,1]: 0.000073
+{
+ "L1_addr": 1.4209350407412558e-07,
+ "L1_addr_max": 1.7333044866063574e-07,
+ "L1_gate": 0.0003390145602679695,
+ "L1_gate_max": 0.0005085360025987029,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s2_dk256.pt",
+ "decay_gate_mean": 0.6026653163135052,
+ "decay_gate_mean_max": 0.6537301540374756,
+ "dk": 256,
+ "dv": 128,
+ "erase_gate_max": 0.8877858966588974,
+ "erase_gate_max_max": 0.8890729546546936,
+ "erase_gate_mean": 0.8815224692225456,
+ "erase_gate_mean_max": 0.8815827369689941,
+ "erase_gate_min": 0.8736149556934834,
+ "erase_gate_min_max": 0.8757297992706299,
+ "g_max": 0.8818595819175243,
+ "g_max_max": 0.8822118639945984,
+ "g_mean": 0.8815260417759418,
+ "g_mean_max": 0.8817746639251709,
+ "g_min": 0.8812242783606052,
+ "g_min_max": 0.8815724849700928,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 2.1606683731079102e-07,
+ "mu_max": 4.172325134277344e-07,
+ "multiplier": 2742.7671177941083,
+ "multiplier_max": 4204.285016691345,
+ "n_batch": 16,
+ "resid_addr": 1.8881262597858495e-07,
+ "resid_addr_max": 2.7863126206284505e-07,
+ "resid_gate": 0.11877571931108832,
+ "resid_gate_max": 0.11910320818424225,
+ "resid_gate_pred": 0.11877572908997536,
+ "resid_gate_pred_max": 0.11910319328308105,
+ "slope_addr": 1.4209353050383615e-07,
+ "slope_addr_max": 1.7333047965454073e-07,
+ "slope_gate": 0.0003847036669353306,
+ "slope_gate_max": 0.0005770790547075421,
+ "step": 4000,
+ "write_gate_mean": 0.9924778118729591,
+ "write_gate_mean_max": 0.9936136603355408
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s2_dk256.json
+{
+ "L1_addr": 1.4209350407412558e-07,
+ "L1_addr_max": 1.7333044866063574e-07,
+ "L1_gate": 0.0003390145602679695,
+ "L1_gate_max": 0.0005085360025987029,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s2_dk256.pt",
+ "decay_gate_mean": 0.6026653163135052,
+ "decay_gate_mean_max": 0.6537301540374756,
+ "dk": 256,
+ "dv": 128,
+ "erase_gate_max": 0.8877858966588974,
+ "erase_gate_max_max": 0.8890729546546936,
+ "erase_gate_mean": 0.8815224692225456,
+ "erase_gate_mean_max": 0.8815827369689941,
+ "erase_gate_min": 0.8736149556934834,
+ "erase_gate_min_max": 0.8757297992706299,
+ "g_max": 0.8818595819175243,
+ "g_max_max": 0.8822118639945984,
+ "g_mean": 0.8815260417759418,
+ "g_mean_max": 0.8817746639251709,
+ "g_min": 0.8812242783606052,
+ "g_min_max": 0.8815724849700928,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 2.1606683731079102e-07,
+ "mu_max": 4.172325134277344e-07,
+ "multiplier": 2742.7671177941083,
+ "multiplier_max": 4204.285016691345,
+ "n_batch": 16,
+ "resid_addr": 1.8881262597858495e-07,
+ "resid_addr_max": 2.7863126206284505e-07,
+ "resid_gate": 0.11877571931108832,
+ "resid_gate_max": 0.11910320818424225,
+ "resid_gate_pred": 0.11877572908997536,
+ "resid_gate_pred_max": 0.11910319328308105,
+ "slope_addr": 1.4209353050383615e-07,
+ "slope_addr_max": 1.7333047965454073e-07,
+ "slope_gate": 0.0003847036669353306,
+ "slope_gate_max": 0.0005770790547075421,
+ "step": 4000,
+ "write_gate_mean": 0.9924778118729591,
+ "write_gate_mean_max": 0.9936136603355408
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s2_dk256.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0302  stale_p=0.0262  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9980  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9165  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.1796  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9969  stale_p=0.0040  rank=119.4
+   no memory readout  q_clean=0.0047  q_edit=0.0031  q_del=0.9969  stale_p=0.0040  rank=119.4
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s2_dk256.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0302  stale_p=0.0262  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9980  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9165  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.1796  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9969  stale_p=0.0040  rank=119.4
+   no memory readout  q_clean=0.0047  q_edit=0.0031  q_del=0.9969  stale_p=0.0040  rank=119.4
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s2_dk256.json
+      case       loss      acc   n
+   trained    0.00004   1.0000   576
+ gate 0.00    0.00004   1.0000   576
+ gate 0.25    0.00004   1.0000   576
+ gate 0.50    0.00004   1.0000   576
+ gate 0.75    0.00004   1.0000   576
+ gate 0.90    0.00004   1.0000   576
+ gate 1.00    0.00004   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s2_dk256.json
+loss range over g in [0,1]: 0.000000
+      case       loss      acc   n
+   trained    0.00004   1.0000   576
+ gate 0.00    0.00004   1.0000   576
+ gate 0.25    0.00004   1.0000   576
+ gate 0.50    0.00004   1.0000   576
+ gate 0.75    0.00004   1.0000   576
+ gate 0.90    0.00004   1.0000   576
+ gate 1.00    0.00004   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s2_dk256.json
+loss range over g in [0,1]: 0.000000
+      case       loss      acc   n
+   trained    0.00855   1.0000   576
+ gate 0.00    0.00854   1.0000   576
+ gate 0.25    0.00877   1.0000   576
+ gate 0.50    0.00932   1.0000   576
+ gate 0.75    0.01020   1.0000   576
+ gate 0.90    0.01094   1.0000   576
+ gate 1.00    0.01155   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s2_dk32.json
+loss range over g in [0,1]: 0.003009
+      case       loss      acc   n
+   trained    0.00855   1.0000   576
+ gate 0.00    0.00854   1.0000   576
+ gate 0.25    0.00877   1.0000   576
+ gate 0.50    0.00932   1.0000   576
+ gate 0.75    0.01020   1.0000   576
+ gate 0.90    0.01094   1.0000   576
+ gate 1.00    0.01155   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s2_dk32.json
+loss range over g in [0,1]: 0.003009
+      case       loss      acc   n
+   trained    0.00052   1.0000   576
+ gate 0.00    0.00052   1.0000   576
+ gate 0.25    0.00053   1.0000   576
+ gate 0.50    0.00054   1.0000   576
+ gate 0.75    0.00057   1.0000   576
+ gate 0.90    0.00059   1.0000   576
+ gate 1.00    0.00060   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s2_dk64.json
+loss range over g in [0,1]: 0.000081
+      case       loss      acc   n
+   trained    0.00052   1.0000   576
+ gate 0.00    0.00052   1.0000   576
+ gate 0.25    0.00053   1.0000   576
+ gate 0.50    0.00054   1.0000   576
+ gate 0.75    0.00057   1.0000   576
+ gate 0.90    0.00059   1.0000   576
+ gate 1.00    0.00060   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s2_dk64.json
+loss range over g in [0,1]: 0.000081
+{
+ "L1_addr": 1.365779076500928e-07,
+ "L1_addr_max": 1.5922904594845022e-07,
+ "L1_gate": 0.00029380702926573576,
+ "L1_gate_max": 0.00045373421744443476,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s3_dk256.pt",
+ "decay_gate_mean": 0.6526787392795086,
+ "decay_gate_mean_max": 0.6905980110168457,
+ "dk": 256,
+ "dv": 128,
+ "erase_gate_max": 0.888385284692049,
+ "erase_gate_max_max": 0.8900354504585266,
+ "erase_gate_mean": 0.8814905434846878,
+ "erase_gate_mean_max": 0.8815661668777466,
+ "erase_gate_min": 0.8748531751334667,
+ "erase_gate_min_max": 0.8761334419250488,
+ "g_max": 0.8817980401217937,
+ "g_max_max": 0.8820232152938843,
+ "g_mean": 0.8814994320273399,
+ "g_mean_max": 0.8816056251525879,
+ "g_min": 0.8811883963644505,
+ "g_min_max": 0.8813885450363159,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 1.5046680346131325e-07,
+ "mu_max": 1.7881393432617188e-07,
+ "multiplier": 2456.5926477073685,
+ "multiplier_max": 3679.232305695279,
+ "n_batch": 16,
+ "resid_addr": 1.5034256328760875e-07,
+ "resid_addr_max": 1.842235519688984e-07,
+ "resid_gate": 0.11881159245967865,
+ "resid_gate_max": 0.11901987344026566,
+ "resid_gate_pred": 0.11881159245967865,
+ "resid_gate_pred_max": 0.11901992559432983,
+ "slope_addr": 1.3657792729235053e-07,
+ "slope_addr_max": 1.5922907442082747e-07,
+ "slope_gate": 0.0003334297244410492,
+ "slope_gate_max": 0.0005150334617392278,
+ "step": 4000,
+ "write_gate_mean": 0.9935437552630901,
+ "write_gate_mean_max": 0.9944396018981934
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s3_dk256.json
+{
+ "L1_addr": 1.365779076500928e-07,
+ "L1_addr_max": 1.5922904594845022e-07,
+ "L1_gate": 0.00029380702926573576,
+ "L1_gate_max": 0.00045373421744443476,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s3_dk256.pt",
+ "decay_gate_mean": 0.6526787392795086,
+ "decay_gate_mean_max": 0.6905980110168457,
+ "dk": 256,
+ "dv": 128,
+ "erase_gate_max": 0.888385284692049,
+ "erase_gate_max_max": 0.8900354504585266,
+ "erase_gate_mean": 0.8814905434846878,
+ "erase_gate_mean_max": 0.8815661668777466,
+ "erase_gate_min": 0.8748531751334667,
+ "erase_gate_min_max": 0.8761334419250488,
+ "g_max": 0.8817980401217937,
+ "g_max_max": 0.8820232152938843,
+ "g_mean": 0.8814994320273399,
+ "g_mean_max": 0.8816056251525879,
+ "g_min": 0.8811883963644505,
+ "g_min_max": 0.8813885450363159,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 1.5046680346131325e-07,
+ "mu_max": 1.7881393432617188e-07,
+ "multiplier": 2456.5926477073685,
+ "multiplier_max": 3679.232305695279,
+ "n_batch": 16,
+ "resid_addr": 1.5034256328760875e-07,
+ "resid_addr_max": 1.842235519688984e-07,
+ "resid_gate": 0.11881159245967865,
+ "resid_gate_max": 0.11901987344026566,
+ "resid_gate_pred": 0.11881159245967865,
+ "resid_gate_pred_max": 0.11901992559432983,
+ "slope_addr": 1.3657792729235053e-07,
+ "slope_addr_max": 1.5922907442082747e-07,
+ "slope_gate": 0.0003334297244410492,
+ "slope_gate_max": 0.0005150334617392278,
+ "step": 4000,
+ "write_gate_mean": 0.9935437552630901,
+ "write_gate_mean_max": 0.9944396018981934
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s3_dk256.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0010  stale_p=0.0263  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=1.0000  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9981  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9195  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.1821  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9969  stale_p=0.0039  rank=127.0
+   no memory readout  q_clean=0.0016  q_edit=0.0021  q_del=0.9969  stale_p=0.0039  rank=127.0
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=1.0000  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s3_dk256.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0010  stale_p=0.0263  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=1.0000  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9981  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9195  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.1821  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9969  stale_p=0.0039  rank=127.0
+   no memory readout  q_clean=0.0016  q_edit=0.0021  q_del=0.9969  stale_p=0.0039  rank=127.0
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=1.0000  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s3_dk256.json
+      case       loss      acc   n
+   trained    0.00004   1.0000   576
+ gate 0.00    0.00004   1.0000   576
+ gate 0.25    0.00004   1.0000   576
+ gate 0.50    0.00004   1.0000   576
+ gate 0.75    0.00004   1.0000   576
+ gate 0.90    0.00004   1.0000   576
+ gate 1.00    0.00004   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s3_dk256.json
+loss range over g in [0,1]: 0.000000
+      case       loss      acc   n
+   trained    0.00004   1.0000   576
+ gate 0.00    0.00004   1.0000   576
+ gate 0.25    0.00004   1.0000   576
+ gate 0.50    0.00004   1.0000   576
+ gate 0.75    0.00004   1.0000   576
+ gate 0.90    0.00004   1.0000   576
+ gate 1.00    0.00004   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s3_dk256.json
+loss range over g in [0,1]: 0.000000
+      case       loss      acc   n
+   trained    0.01195   0.9997   576
+ gate 0.00    0.01201   0.9997   576
+ gate 0.25    0.01194   0.9997   576
+ gate 0.50    0.01230   0.9997   576
+ gate 0.75    0.01313   0.9997   576
+ gate 0.90    0.01392   0.9997   576
+ gate 1.00    0.01462   0.9997   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s3_dk32.json
+loss range over g in [0,1]: 0.002675
+      case       loss      acc   n
+   trained    0.01195   0.9997   576
+ gate 0.00    0.01201   0.9997   576
+ gate 0.25    0.01194   0.9997   576
+ gate 0.50    0.01230   0.9997   576
+ gate 0.75    0.01313   0.9997   576
+ gate 0.90    0.01392   0.9997   576
+ gate 1.00    0.01462   0.9997   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s3_dk32.json
+loss range over g in [0,1]: 0.002675
+      case       loss      acc   n
+   trained    0.00052   1.0000   576
+ gate 0.00    0.00053   1.0000   576
+ gate 0.25    0.00052   1.0000   576
+ gate 0.50    0.00054   1.0000   576
+ gate 0.75    0.00056   1.0000   576
+ gate 0.90    0.00058   1.0000   576
+ gate 1.00    0.00060   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s3_dk64.json
+loss range over g in [0,1]: 0.000071
+      case       loss      acc   n
+   trained    0.00052   1.0000   576
+ gate 0.00    0.00053   1.0000   576
+ gate 0.25    0.00052   1.0000   576
+ gate 0.50    0.00054   1.0000   576
+ gate 0.75    0.00056   1.0000   576
+ gate 0.90    0.00058   1.0000   576
+ gate 1.00    0.00060   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s3_dk64.json
+loss range over g in [0,1]: 0.000071
+      case       loss      acc   n
+   trained    0.00052   1.0000   576
+ gate 0.00    0.00053   1.0000   576
+ gate 0.25    0.00052   1.0000   576
+ gate 0.50    0.00054   1.0000   576
+ gate 0.75    0.00056   1.0000   576
+ gate 0.90    0.00058   1.0000   576
+ gate 1.00    0.00060   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s3_dk64.json
+loss range over g in [0,1]: 0.000071
+{
+ "L1_addr": 1.403599356741836e-07,
+ "L1_addr_max": 1.8169572513215826e-07,
+ "L1_gate": 0.0003134503713226877,
+ "L1_gate_max": 0.0003836718969978392,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s4_dk256.pt",
+ "decay_gate_mean": 0.6103715300559998,
+ "decay_gate_mean_max": 0.6706647872924805,
+ "dk": 256,
+ "dv": 128,
+ "erase_gate_max": 0.8890669234097004,
+ "erase_gate_max_max": 0.8910171389579773,
+ "erase_gate_mean": 0.8816290944814682,
+ "erase_gate_mean_max": 0.8816847801208496,
+ "erase_gate_min": 0.8750042356550694,
+ "erase_gate_min_max": 0.8766894936561584,
+ "g_max": 0.8820225596427917,
+ "g_max_max": 0.8823940753936768,
+ "g_mean": 0.8816874176263809,
+ "g_mean_max": 0.8819255828857422,
+ "g_min": 0.8813513293862343,
+ "g_min_max": 0.881705641746521,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 1.6156252513610525e-07,
+ "mu_max": 2.980232238769531e-07,
+ "multiplier": 2548.63941610779,
+ "multiplier_max": 3197.4521459889525,
+ "n_batch": 16,
+ "resid_addr": 1.4985595342409397e-07,
+ "resid_addr_max": 2.4247717078651476e-07,
+ "resid_gate": 0.11864867759868503,
+ "resid_gate_max": 0.11894133687019348,
+ "resid_gate_pred": 0.11864867806434631,
+ "resid_gate_pred_max": 0.1189413070678711,
+ "slope_addr": 1.403599575596389e-07,
+ "slope_addr_max": 1.8169575762189152e-07,
+ "slope_gate": 0.0003556510236727041,
+ "slope_gate_max": 0.000435333251437146,
+ "step": 4000,
+ "write_gate_mean": 0.9925929680466652,
+ "write_gate_mean_max": 0.9940088987350464
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s4_dk256.json
+{
+ "L1_addr": 1.403599356741836e-07,
+ "L1_addr_max": 1.8169572513215826e-07,
+ "L1_gate": 0.0003134503713226877,
+ "L1_gate_max": 0.0003836718969978392,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s4_dk256.pt",
+ "decay_gate_mean": 0.6103715300559998,
+ "decay_gate_mean_max": 0.6706647872924805,
+ "dk": 256,
+ "dv": 128,
+ "erase_gate_max": 0.8890669234097004,
+ "erase_gate_max_max": 0.8910171389579773,
+ "erase_gate_mean": 0.8816290944814682,
+ "erase_gate_mean_max": 0.8816847801208496,
+ "erase_gate_min": 0.8750042356550694,
+ "erase_gate_min_max": 0.8766894936561584,
+ "g_max": 0.8820225596427917,
+ "g_max_max": 0.8823940753936768,
+ "g_mean": 0.8816874176263809,
+ "g_mean_max": 0.8819255828857422,
+ "g_min": 0.8813513293862343,
+ "g_min_max": 0.881705641746521,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 1.6156252513610525e-07,
+ "mu_max": 2.980232238769531e-07,
+ "multiplier": 2548.63941610779,
+ "multiplier_max": 3197.4521459889525,
+ "n_batch": 16,
+ "resid_addr": 1.4985595342409397e-07,
+ "resid_addr_max": 2.4247717078651476e-07,
+ "resid_gate": 0.11864867759868503,
+ "resid_gate_max": 0.11894133687019348,
+ "resid_gate_pred": 0.11864867806434631,
+ "resid_gate_pred_max": 0.1189413070678711,
+ "slope_addr": 1.403599575596389e-07,
+ "slope_addr_max": 1.8169575762189152e-07,
+ "slope_gate": 0.0003556510236727041,
+ "slope_gate_max": 0.000435333251437146,
+ "step": 4000,
+ "write_gate_mean": 0.9925929680466652,
+ "write_gate_mean_max": 0.9940088987350464
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s4_dk256.json
+{
+ "L1_addr": 1.403599356741836e-07,
+ "L1_addr_max": 1.8169572513215826e-07,
+ "L1_gate": 0.0003134503713226877,
+ "L1_gate_max": 0.0003836718969978392,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-seeds/gated_s4_dk256.pt",
+ "decay_gate_mean": 0.6103715300559998,
+ "decay_gate_mean_max": 0.6706647872924805,
+ "dk": 256,
+ "dv": 128,
+ "erase_gate_max": 0.8890669234097004,
+ "erase_gate_max_max": 0.8910171389579773,
+ "erase_gate_mean": 0.8816290944814682,
+ "erase_gate_mean_max": 0.8816847801208496,
+ "erase_gate_min": 0.8750042356550694,
+ "erase_gate_min_max": 0.8766894936561584,
+ "g_max": 0.8820225596427917,
+ "g_max_max": 0.8823940753936768,
+ "g_mean": 0.8816874176263809,
+ "g_mean_max": 0.8819255828857422,
+ "g_min": 0.8813513293862343,
+ "g_min_max": 0.881705641746521,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 1.6156252513610525e-07,
+ "mu_max": 2.980232238769531e-07,
+ "multiplier": 2548.63941610779,
+ "multiplier_max": 3197.4521459889525,
+ "n_batch": 16,
+ "resid_addr": 1.4985595342409397e-07,
+ "resid_addr_max": 2.4247717078651476e-07,
+ "resid_gate": 0.11864867759868503,
+ "resid_gate_max": 0.11894133687019348,
+ "resid_gate_pred": 0.11864867806434631,
+ "resid_gate_pred_max": 0.1189413070678711,
+ "slope_addr": 1.403599575596389e-07,
+ "slope_addr_max": 1.8169575762189152e-07,
+ "slope_gate": 0.0003556510236727041,
+ "slope_gate_max": 0.000435333251437146,
+ "step": 4000,
+ "write_gate_mean": 0.9925929680466652,
+ "write_gate_mean_max": 0.9940088987350464
+}
+wrote /root/autodl-tmp/ear-seeds/align_gated_s4_dk256.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0021  stale_p=0.0255  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9978  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9124  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.1745  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9990  stale_p=0.0039  rank=128.0
+   no memory readout  q_clean=0.0021  q_edit=0.0031  q_del=0.9990  stale_p=0.0039  rank=128.0
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s4_dk256.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0021  stale_p=0.0255  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9978  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9124  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.1745  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9990  stale_p=0.0039  rank=128.0
+   no memory readout  q_clean=0.0021  q_edit=0.0031  q_del=0.9990  stale_p=0.0039  rank=128.0
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s4_dk256.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=0.0021  stale_p=0.0255  rank=0.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9978  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9124  rank=0.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.1745  rank=0.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=0.9990  stale_p=0.0039  rank=128.0
+   no memory readout  q_clean=0.0021  q_edit=0.0031  q_del=0.9990  stale_p=0.0039  rank=128.0
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9999  rank=0.0
+wrote /root/autodl-tmp/ear-seeds/inter_gated_s4_dk256.json
+      case       loss      acc   n
+   trained    0.00005   1.0000   576
+ gate 0.00    0.00005   1.0000   576
+ gate 0.25    0.00005   1.0000   576
+ gate 0.50    0.00005   1.0000   576
+ gate 0.75    0.00005   1.0000   576
+ gate 0.90    0.00005   1.0000   576
+ gate 1.00    0.00005   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s4_dk256.json
+loss range over g in [0,1]: 0.000000
+      case       loss      acc   n
+   trained    0.00005   1.0000   576
+ gate 0.00    0.00005   1.0000   576
+ gate 0.25    0.00005   1.0000   576
+ gate 0.50    0.00005   1.0000   576
+ gate 0.75    0.00005   1.0000   576
+ gate 0.90    0.00005   1.0000   576
+ gate 1.00    0.00005   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s4_dk256.json
+loss range over g in [0,1]: 0.000000
+      case       loss      acc   n
+   trained    0.00005   1.0000   576
+ gate 0.00    0.00005   1.0000   576
+ gate 0.25    0.00005   1.0000   576
+ gate 0.50    0.00005   1.0000   576
+ gate 0.75    0.00005   1.0000   576
+ gate 0.90    0.00005   1.0000   576
+ gate 1.00    0.00005   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s4_dk256.json
+loss range over g in [0,1]: 0.000000
+      case       loss      acc   n
+   trained    0.01265   0.9993   576
+ gate 0.00    0.01269   0.9993   576
+ gate 0.25    0.01273   0.9993   576
+ gate 0.50    0.01324   0.9993   576
+ gate 0.75    0.01422   0.9993   576
+ gate 0.90    0.01509   0.9993   576
+ gate 1.00    0.01583   0.9993   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s4_dk32.json
+loss range over g in [0,1]: 0.003144
+      case       loss      acc   n
+   trained    0.01265   0.9993   576
+ gate 0.00    0.01269   0.9993   576
+ gate 0.25    0.01273   0.9993   576
+ gate 0.50    0.01324   0.9993   576
+ gate 0.75    0.01422   0.9993   576
+ gate 0.90    0.01509   0.9993   576
+ gate 1.00    0.01583   0.9993   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s4_dk32.json
+loss range over g in [0,1]: 0.003144
+      case       loss      acc   n
+   trained    0.01265   0.9993   576
+ gate 0.00    0.01269   0.9993   576
+ gate 0.25    0.01273   0.9993   576
+ gate 0.50    0.01324   0.9993   576
+ gate 0.75    0.01422   0.9993   576
+ gate 0.90    0.01509   0.9993   576
+ gate 1.00    0.01583   0.9993   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s4_dk32.json
+loss range over g in [0,1]: 0.003144
+      case       loss      acc   n
+   trained    0.00055   1.0000   576
+ gate 0.00    0.00055   1.0000   576
+ gate 0.25    0.00056   1.0000   576
+ gate 0.50    0.00057   1.0000   576
+ gate 0.75    0.00059   1.0000   576
+ gate 0.90    0.00061   1.0000   576
+ gate 1.00    0.00063   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s4_dk64.json
+loss range over g in [0,1]: 0.000073
+      case       loss      acc   n
+   trained    0.00055   1.0000   576
+ gate 0.00    0.00055   1.0000   576
+ gate 0.25    0.00056   1.0000   576
+ gate 0.50    0.00057   1.0000   576
+ gate 0.75    0.00059   1.0000   576
+ gate 0.90    0.00061   1.0000   576
+ gate 1.00    0.00063   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s4_dk64.json
+loss range over g in [0,1]: 0.000073
+      case       loss      acc   n
+   trained    0.00055   1.0000   576
+ gate 0.00    0.00055   1.0000   576
+ gate 0.25    0.00056   1.0000   576
+ gate 0.50    0.00057   1.0000   576
+ gate 0.75    0.00059   1.0000   576
+ gate 0.90    0.00061   1.0000   576
+ gate 1.00    0.00063   1.0000   576
+wrote /root/autodl-tmp/ear-seeds/lossprobe_gated_s4_dk64.json
+loss range over g in [0,1]: 0.000073

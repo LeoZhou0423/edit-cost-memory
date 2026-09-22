@@ -14,6 +14,7 @@ Run: python experiments/make_fig_v11.py --outdir ../revision/figures
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 
 import matplotlib
@@ -21,10 +22,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-ROSE = "#DF81A5"
-BLUE = "#4E7FA8"
-DARK = "#2C6A9B"
-GREY = "#555555"
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from tools.palette import BLUE_D as BLUE  # noqa: E402
+from tools.palette import DARK, GREY, ROSE  # noqa: E402
 
 plt.rcParams.update({
     "font.family": "serif",

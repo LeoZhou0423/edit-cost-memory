@@ -257,6 +257,13 @@ def main():
     ap.add_argument("--eval-repeats", type=int, default=8)
     ap.add_argument("--eval-every", type=int, default=250)
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--select-step", type=int, default=0,
+                    help="save and evaluate the checkpoint at exactly this step "
+                         "instead of the validation-best step.  Use it to compare "
+                         "arms at a MATCHED training budget: the default "
+                         "(validation-best) checkpoint sits at a different step in "
+                         "every run, so a cross-arm difference in it confounds the "
+                         "variable of interest with the budget.")
     ap.add_argument("--data-seed", type=int, default=1000)
     ap.add_argument("--test-data-seed", type=int, default=5000)
     ap.add_argument("--checkpoint", default="")
@@ -309,9 +316,12 @@ def main():
             rec = evaluate(model, args, device, args.data_seed + 1,
                            args.eval_batch_size, args.eval_repeats)
             score = min(rec["q_clean"], rec["q_edited"])
-            if score > best:
+            improved = score > best
+            if improved:
                 best, best_step = score, step
-                if args.checkpoint:
+            if args.checkpoint:
+                take = (step == args.select_step) if args.select_step else improved
+                if take:
                     torch.save({"model": model.state_dict(), "args": vars(args),
                                 "step": step}, args.checkpoint)
             out = {"event": "validation", "cell": args.cell, "seed": args.seed,
@@ -321,6 +331,8 @@ def main():
                 fh.write(json.dumps(out, sort_keys=True) + "\n")
             print(json.dumps(out, sort_keys=True), flush=True)
 
+    if args.select_step:
+        best_step = args.select_step          # matched-budget reporting
     if args.checkpoint and os.path.exists(args.checkpoint):
         sel = torch.load(args.checkpoint, map_location=device, weights_only=False)
         model.load_state_dict(sel["model"])
