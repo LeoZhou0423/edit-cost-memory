@@ -79,14 +79,14 @@ def evaluate(model, args, device, data_seed, batch_size, repeats):
     makes that fraction nearly uninformative on its own, so the rank and the
     probability of the stale value are reported alongside it.
     """
-    gen = make_ear(seed=data_seed)
+    gen = make_ear(seed=data_seed, del_target=getattr(args, "del_target", "none"))
     model.eval()
     old = getattr(model, "alpha", None)
     if old is not None:
         model.alpha = 1.0
     hit = {"clean": 0, "edited": 0}
     total = {"clean": 0, "edited": 0}
-    del_hits, del_ranks, del_probs = [], [], []
+    del_hits, del_ranks, del_probs, del_tok = [], [], [], []
     for _ in range(repeats):
         seq, tgt, wmask, ops, meta = gen(batch_size, args.m, args.seq_len, device,
                                          args.n_edit)
@@ -104,6 +104,10 @@ def evaluate(model, args, device, data_seed, batch_size, repeats):
                 if kind == 2:
                     stale = int(meta["current"][b, pair])
                     del_hits.append(int(int(pred[b, slot]) != stale))
+                    # the marker token is the answer under --del-target noise.
+                    # chance is 1/50257, so unlike q_del_suppressed (chance
+                    # 0.996) this one cannot be eaten by a broken model.
+                    del_tok.append(int(int(pred[b, slot]) == NOISE))
                     del_ranks.append(float((logits[b, slot] > logits[b, slot, stale])
                                            .sum()))
                     del_probs.append(float(probs[b, slot, stale]))
@@ -123,6 +127,7 @@ def evaluate(model, args, device, data_seed, batch_size, repeats):
     out["stale_rank_median"] = (float(np.median(del_ranks)) if del_ranks
                                 else float("nan"))
     out["stale_prob"] = float(np.mean(del_probs)) if del_probs else float("nan")
+    out["q_del_token"] = (sum(del_tok) / len(del_tok)) if del_tok else float("nan")
     out["n_clean"] = total["clean"]
     out["n_edited"] = total["edited"]
     out["n_deleted"] = len(del_hits)
@@ -253,6 +258,14 @@ def main():
                          "problem' from 'this gate initialisation is the problem'.")
     ap.add_argument("--ablate-erase", action="store_true",
                     help="drop the erase operations: writes land but nothing is removed")
+    ap.add_argument("--del-target", default="none", choices=["none", "noise"],
+                    help="supervision at queries on deleted keys.  'none' is the "
+                         "paper's protocol: a deleted key has no correct token, so "
+                         "deletion contributes nothing to the loss.  'noise' "
+                         "supervises those queries with the reserved marker token, "
+                         "so deletion IS scored.  Comparing the two is the "
+                         "deletion-scored arm: it separates 'the erase gate is "
+                         "unlearnable' from 'the task never asks about deletion'.")
     ap.add_argument("--eval-batch-size", type=int, default=16)
     ap.add_argument("--eval-repeats", type=int, default=8)
     ap.add_argument("--eval-every", type=int, default=250)
@@ -277,7 +290,7 @@ def main():
     model = build_model(args, device)
     opt = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.0,
                             betas=(0.9, 0.95))
-    train_gen = make_ear(seed=args.data_seed)
+    train_gen = make_ear(seed=args.data_seed, del_target=args.del_target)
 
     start = {"event": "start", "cell": args.cell, "orth": bool(args.orth),
              "ablate_erase": bool(args.ablate_erase), "m": args.m,
@@ -286,6 +299,7 @@ def main():
              * (args.dk if args.cell.endswith("bi") else 1),
              "steps": args.steps, "batch_size": args.batch_size, "lr": args.lr,
              "lr_schedule": args.lr_schedule, "emb_init": args.emb_init,
+             "del_target": args.del_target,
              "seed": args.seed, "data_seed": args.data_seed,
              "test_data_seed": args.test_data_seed,
              "parameters": count_params(model)}
@@ -342,7 +356,8 @@ def main():
     test.update({"event": "test", "cell": args.cell, "seed": args.seed,
                  "selected_step": best_step, "steps": args.steps,
                  "m": args.m, "n_edit": args.n_edit, "dk": args.dk, "orth": args.orth,
-                 "ablate_erase": bool(args.ablate_erase), "cell_kind": args.cell})
+                 "ablate_erase": bool(args.ablate_erase), "cell_kind": args.cell,
+                 "del_target": args.del_target})
     with open(args.output, "a", encoding="utf-8") as fh:
         fh.write(json.dumps(test, sort_keys=True) + "\n")
     print(json.dumps(test, sort_keys=True), flush=True)

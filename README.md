@@ -57,6 +57,17 @@ checkpoints share a training budget --- the default selection (validation-best)
 sits at a different step in every run and confounds the key dimension with the
 budget.
 
+A second, **deletion-scored** copy of the same sweep is driven by
+`experiments/run_del_scored.sh`. It is identical except that every arm is
+trained with `benchmark_ear.py --del-target noise`, which supervises the
+deleted-key query with the dedicated NOISE marker token so that erasing lowers
+the loss. With the deletion signal back in the objective the erase gate now
+reaches `g = 1` and deletion is learned end-to-end (`stale_prob` falls from
+0.98--0.99 to ~1e-4; the token-level deletion score `q_del^(tok)` rises from
+chance `1/50257` to 1.000). Its run records are under
+`data/revision/ear-delscored/` (`del_s{seed}_dk{dk}.jsonl`), and
+`tools/summarize_delscored.py` builds the un-scored vs scored comparison.
+
 ## Requirements
 
     pip install -r requirements.txt
@@ -71,8 +82,10 @@ and the per-flag JSONL files under `ear/`, `ear-fix/`, `fair/`, `dense/`,
 `attribution/`, `tuning/` and `single_query/` for the trained arms.
 `data/revision/ear-seeds/` holds the fifteen-run gated sweep behind Appendix A:
 one `gated_s{seed}_dk{dk}.jsonl` per run plus the `align_`, `inter_` and
-`lossprobe_` summaries consumed by `make_fig_gate.py`. See
-`data/revision/README.md`.
+`lossprobe_` summaries consumed by `make_fig_gate.py`.
+`data/revision/ear-delscored/` holds the deletion-scored counterpart
+(`del_s{seed}_dk{dk}.jsonl`), and `data/revision/locality_multiload.json` the
+load sweep. See `data/revision/README.md`.
 
 ## License
 

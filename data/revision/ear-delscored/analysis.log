@@ -1,0 +1,365 @@
+{
+ "L1_addr": 1.4459427166713112e-07,
+ "L1_addr_max": 1.8847664762233762e-07,
+ "L1_gate": 6.150788431114051e-05,
+ "L1_gate_max": 9.161653724731877e-05,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-delscored/del_s0_dk256.pt",
+ "decay_gate_mean": 0.023585115442983806,
+ "decay_gate_mean_max": 0.02589983120560646,
+ "dk": 256,
+ "dv": 128,
+ "erase_gate_max": 0.9974769987165928,
+ "erase_gate_max_max": 0.9978269934654236,
+ "erase_gate_mean": 0.995424322783947,
+ "erase_gate_mean_max": 0.9956510066986084,
+ "erase_gate_min": 0.9941340498626232,
+ "erase_gate_min_max": 0.9946563243865967,
+ "g_max": 0.9960929192602634,
+ "g_max_max": 0.9966142177581787,
+ "g_mean": 0.9955908805131912,
+ "g_mean_max": 0.9958235025405884,
+ "g_min": 0.9949326775968075,
+ "g_min_max": 0.9954277276992798,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 1.8079299479722977e-07,
+ "mu_max": 2.384185791015625e-07,
+ "multiplier": 436.86501148554294,
+ "multiplier_max": 711.962151454527,
+ "n_batch": 16,
+ "resid_addr": 1.4214212562535522e-07,
+ "resid_addr_max": 2.3206985133583657e-07,
+ "resid_gate": 0.005067325051641092,
+ "resid_gate_max": 0.006164472550153732,
+ "resid_gate_pred": 0.005067329853773117,
+ "resid_gate_pred_max": 0.006164491176605225,
+ "slope_addr": 1.445942940557709e-07,
+ "slope_addr_max": 1.8847668132459455e-07,
+ "slope_gate": 6.18239207262891e-05,
+ "slope_gate_max": 9.218480969329009e-05,
+ "step": 4000,
+ "write_gate_mean": 0.8500881940126419,
+ "write_gate_mean_max": 0.8609938621520996
+}
+wrote /root/autodl-tmp/ear-delscored/align_del_s0_dk256.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=1.0000  stale_p=0.0000  rank=118.0
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9996  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9492  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=1.0000  stale_p=0.0945  rank=1.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=1.0000  stale_p=0.0006  rank=1.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=1.0000  stale_p=0.0000  rank=128.1
+   no memory readout  q_clean=0.0000  q_edit=0.0000  q_del=1.0000  stale_p=0.0000  rank=128.1
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9996  rank=0.0
+wrote /root/autodl-tmp/ear-delscored/inter_del_s0_dk256.json
+      case       loss      acc   n
+   trained    0.00048   1.0000   768
+ gate 0.00    2.07775   0.7500   768
+ gate 0.25    0.77068   0.7500   768
+ gate 0.50    0.02785   1.0000   768
+ gate 0.75    0.00110   1.0000   768
+ gate 0.90    0.00060   1.0000   768
+ gate 1.00    0.00047   1.0000   768
+wrote /root/autodl-tmp/ear-delscored/lossprobe_del_s0_dk256.json
+loss range over g in [0,1]: 2.077274
+{
+ "L1_addr": 0.38643414713442326,
+ "L1_addr_max": 0.5422252416610718,
+ "L1_gate": 0.3274155482649803,
+ "L1_gate_max": 0.45956259965896606,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-delscored/del_s0_dk32.pt",
+ "decay_gate_mean": 0.6248862817883492,
+ "decay_gate_mean_max": 0.666638970375061,
+ "dk": 32,
+ "dv": 128,
+ "erase_gate_max": 0.8806726597249508,
+ "erase_gate_max_max": 0.8880692720413208,
+ "erase_gate_mean": 0.8507230021059513,
+ "erase_gate_mean_max": 0.8557323217391968,
+ "erase_gate_min": 0.8122202530503273,
+ "erase_gate_min_max": 0.8273268938064575,
+ "g_max": 0.8555273525416851,
+ "g_max_max": 0.866042971611023,
+ "g_mean": 0.8471824713051319,
+ "g_mean_max": 0.8503206968307495,
+ "g_min": 0.8377824015915394,
+ "g_min_max": 0.8474606275558472,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.3735874881967902,
+ "mu_max": 0.5306648015975952,
+ "multiplier": 1.0116022786907781,
+ "multiplier_max": 1.0370326621578112,
+ "n_batch": 16,
+ "resid_addr": 2.186135485970908e-07,
+ "resid_addr_max": 2.764424777979002e-07,
+ "resid_gate": 0.16221761796623468,
+ "resid_gate_max": 0.17247027158737183,
+ "resid_gate_pred": 0.1622176095843315,
+ "resid_gate_pred_max": 0.17247021198272705,
+ "slope_addr": 0.38643423032883417,
+ "slope_addr_max": 0.5422253709376743,
+ "slope_gate": 0.39077907724052563,
+ "slope_gate_max": 0.5422819476397223,
+ "step": 4000,
+ "write_gate_mean": 0.9921338185667992,
+ "write_gate_mean_max": 0.9934258460998535
+}
+wrote /root/autodl-tmp/ear-delscored/align_del_s0_dk32.json
+          as trained  q_clean=0.9974  q_edit=1.0000  q_del=1.0000  stale_p=0.0023  rank=1.0
+           gate 0.00  q_clean=0.9969  q_edit=1.0000  q_del=0.0063  stale_p=0.9728  rank=0.0
+           gate 0.25  q_clean=0.9979  q_edit=1.0000  q_del=0.0792  stale_p=0.7768  rank=0.0
+           gate 0.50  q_clean=0.9990  q_edit=1.0000  q_del=0.9969  stale_p=0.1518  rank=1.0
+           gate 0.75  q_clean=0.9974  q_edit=1.0000  q_del=0.9979  stale_p=0.0069  rank=1.0
+           gate 1.00  q_clean=0.9948  q_edit=1.0000  q_del=1.0000  stale_p=0.0004  rank=89.6
+   no memory readout  q_clean=0.0000  q_edit=0.0000  q_del=1.0000  stale_p=0.0001  rank=131.4
+      erase disabled  q_clean=0.9969  q_edit=1.0000  q_del=0.0063  stale_p=0.9728  rank=0.0
+wrote /root/autodl-tmp/ear-delscored/inter_del_s0_dk32.json
+      case       loss      acc   n
+   trained    0.03564   0.9987   768
+ gate 0.00    1.38047   0.7500   768
+ gate 0.25    0.54421   0.7680   768
+ gate 0.50    0.09767   0.9984   768
+ gate 0.75    0.03967   0.9982   768
+ gate 0.90    0.03456   0.9984   768
+ gate 1.00    0.03373   0.9974   768
+wrote /root/autodl-tmp/ear-delscored/lossprobe_del_s0_dk32.json
+loss range over g in [0,1]: 1.346737
+{
+ "L1_addr": 0.23866803105920553,
+ "L1_addr_max": 0.3327924311161041,
+ "L1_gate": 0.23015113919973373,
+ "L1_gate_max": 0.3204312324523926,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-delscored/del_s0_dk64.pt",
+ "decay_gate_mean": 0.10698734596371651,
+ "decay_gate_mean_max": 0.12772852182388306,
+ "dk": 64,
+ "dv": 128,
+ "erase_gate_max": 0.9742514044046402,
+ "erase_gate_max_max": 0.9776861667633057,
+ "erase_gate_mean": 0.9638617262244225,
+ "erase_gate_mean_max": 0.9656928777694702,
+ "erase_gate_min": 0.9562659822404385,
+ "erase_gate_min_max": 0.9594178795814514,
+ "g_max": 0.9668969139456749,
+ "g_max_max": 0.9697443246841431,
+ "g_mean": 0.9636211059987545,
+ "g_mean_max": 0.9655225276947021,
+ "g_min": 0.9600294418632984,
+ "g_min_max": 0.9635781645774841,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.2306191297248006,
+ "mu_max": 0.33035725355148315,
+ "multiplier": 1.0044776287602941,
+ "multiplier_max": 1.0089481983413886,
+ "n_batch": 16,
+ "resid_addr": 1.9402169559867843e-07,
+ "resid_addr_max": 2.771546689928073e-07,
+ "resid_gate": 0.03997054765932262,
+ "resid_gate_max": 0.04279613494873047,
+ "resid_gate_pred": 0.039970532059669495,
+ "resid_gate_pred_max": 0.04279613494873047,
+ "slope_addr": 0.23866807513580426,
+ "slope_addr_max": 0.3327924906240387,
+ "slope_gate": 0.23974805069435925,
+ "slope_gate_max": 0.33388020035008104,
+ "step": 4000,
+ "write_gate_mean": 0.939662579447031,
+ "write_gate_mean_max": 0.9481706619262695
+}
+wrote /root/autodl-tmp/ear-delscored/align_del_s0_dk64.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=1.0000  stale_p=0.0001  rank=26.7
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9954  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0167  stale_p=0.8756  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=0.9990  stale_p=0.1329  rank=1.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=1.0000  stale_p=0.0022  rank=1.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=1.0000  stale_p=0.0000  rank=102.6
+   no memory readout  q_clean=0.0000  q_edit=0.0000  q_del=1.0000  stale_p=0.0000  rank=126.1
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9954  rank=0.0
+wrote /root/autodl-tmp/ear-delscored/inter_del_s0_dk64.json
+      case       loss      acc   n
+   trained    0.00515   1.0000   768
+ gate 0.00    1.68167   0.7500   768
+ gate 0.25    0.63115   0.7542   768
+ gate 0.50    0.05227   0.9997   768
+ gate 0.75    0.00796   1.0000   768
+ gate 0.90    0.00562   1.0000   768
+ gate 1.00    0.00496   1.0000   768
+wrote /root/autodl-tmp/ear-delscored/lossprobe_del_s0_dk64.json
+loss range over g in [0,1]: 1.676705
+{
+ "L1_addr": 1.4172565521164415e-07,
+ "L1_addr_max": 1.7032020593887864e-07,
+ "L1_gate": 5.8154686257694266e-05,
+ "L1_gate_max": 0.00010250380728393793,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-delscored/del_s1_dk256.pt",
+ "decay_gate_mean": 0.03382635361049324,
+ "decay_gate_mean_max": 0.03775836527347565,
+ "dk": 256,
+ "dv": 128,
+ "erase_gate_max": 0.9978056512773037,
+ "erase_gate_max_max": 0.9980036616325378,
+ "erase_gate_mean": 0.9956859350204468,
+ "erase_gate_mean_max": 0.9959843158721924,
+ "erase_gate_min": 0.9945232085883617,
+ "erase_gate_min_max": 0.9949051141738892,
+ "g_max": 0.9963196590542793,
+ "g_max_max": 0.9966940879821777,
+ "g_mean": 0.9958463609218597,
+ "g_mean_max": 0.9961406588554382,
+ "g_min": 0.9953072555363178,
+ "g_min_max": 0.9956503510475159,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 1.7829006537795067e-07,
+ "mu_max": 2.384185791015625e-07,
+ "multiplier": 416.1402638887292,
+ "multiplier_max": 694.831483401915,
+ "n_batch": 16,
+ "resid_addr": 1.5195890368246978e-07,
+ "resid_addr_max": 2.054735688261644e-07,
+ "resid_gate": 0.00469274481292814,
+ "resid_gate_max": 0.005159720778465271,
+ "resid_gate_pred": 0.004692748188972473,
+ "resid_gate_pred_max": 0.005159735679626465,
+ "slope_addr": 1.4172567416761214e-07,
+ "slope_addr_max": 1.703202262426318e-07,
+ "slope_gate": 5.842743722820388e-05,
+ "slope_gate_max": 0.00010295202974879391,
+ "step": 4000,
+ "write_gate_mean": 0.8829071894288063,
+ "write_gate_mean_max": 0.8921647071838379
+}
+wrote /root/autodl-tmp/ear-delscored/align_del_s1_dk256.json
+          as trained  q_clean=1.0000  q_edit=1.0000  q_del=1.0000  stale_p=0.0000  rank=119.9
+           gate 0.00  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9996  rank=0.0
+           gate 0.25  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9493  rank=0.0
+           gate 0.50  q_clean=1.0000  q_edit=1.0000  q_del=1.0000  stale_p=0.0947  rank=1.0
+           gate 0.75  q_clean=1.0000  q_edit=1.0000  q_del=1.0000  stale_p=0.0006  rank=1.0
+           gate 1.00  q_clean=1.0000  q_edit=1.0000  q_del=1.0000  stale_p=0.0000  rank=126.6
+   no memory readout  q_clean=0.0000  q_edit=0.0000  q_del=1.0000  stale_p=0.0000  rank=126.6
+      erase disabled  q_clean=1.0000  q_edit=1.0000  q_del=0.0000  stale_p=0.9996  rank=0.0
+wrote /root/autodl-tmp/ear-delscored/inter_del_s1_dk256.json
+      case       loss      acc   n
+   trained    0.00047   1.0000   768
+ gate 0.00    2.07621   0.7500   768
+ gate 0.25    0.77011   0.7500   768
+ gate 0.50    0.02790   1.0000   768
+ gate 0.75    0.00109   1.0000   768
+ gate 0.90    0.00059   1.0000   768
+ gate 1.00    0.00046   1.0000   768
+wrote /root/autodl-tmp/ear-delscored/lossprobe_del_s1_dk256.json
+loss range over g in [0,1]: 2.075745
+{
+ "L1_addr": 0.3208583164960146,
+ "L1_addr_max": 0.40941953659057617,
+ "L1_gate": 0.27574549708515406,
+ "L1_gate_max": 0.3510150611400604,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-delscored/del_s1_dk32.pt",
+ "decay_gate_mean": 0.5802360139787197,
+ "decay_gate_mean_max": 0.6304774284362793,
+ "dk": 32,
+ "dv": 128,
+ "erase_gate_max": 0.8912198804318905,
+ "erase_gate_max_max": 0.8945435285568237,
+ "erase_gate_mean": 0.8639610856771469,
+ "erase_gate_mean_max": 0.8671473264694214,
+ "erase_gate_min": 0.8340829610824585,
+ "erase_gate_min_max": 0.847385823726654,
+ "g_max": 0.8687770776450634,
+ "g_max_max": 0.8772664070129395,
+ "g_mean": 0.8612471409142017,
+ "g_mean_max": 0.8653192520141602,
+ "g_min": 0.8543793484568596,
+ "g_min_max": 0.8609175086021423,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.30674773920327425,
+ "mu_max": 0.40681886672973633,
+ "multiplier": 1.0060074272373292,
+ "multiplier_max": 1.0201200062568343,
+ "n_batch": 16,
+ "resid_addr": 2.1652178006092981e-07,
+ "resid_addr_max": 2.8488145176197577e-07,
+ "resid_gate": 0.14562064688652754,
+ "resid_gate_max": 0.1529478281736374,
+ "resid_gate_pred": 0.14562064409255981,
+ "resid_gate_pred_max": 0.15294784307479858,
+ "slope_addr": 0.3208583882042719,
+ "slope_addr_max": 0.4094196342038236,
+ "slope_gate": 0.32284327980802185,
+ "slope_gate_max": 0.4118552705683193,
+ "step": 4000,
+ "write_gate_mean": 0.9907756522297859,
+ "write_gate_mean_max": 0.991799533367157
+}
+wrote /root/autodl-tmp/ear-delscored/align_del_s1_dk32.json
+          as trained  q_clean=0.9906  q_edit=1.0000  q_del=1.0000  stale_p=0.0012  rank=1.8
+           gate 0.00  q_clean=0.9922  q_edit=1.0000  q_del=0.0104  stale_p=0.9681  rank=0.0
+           gate 0.25  q_clean=0.9922  q_edit=1.0000  q_del=0.0875  stale_p=0.7710  rank=0.0
+           gate 0.50  q_clean=0.9927  q_edit=1.0000  q_del=0.9958  stale_p=0.1498  rank=1.0
+           gate 0.75  q_clean=0.9911  q_edit=1.0000  q_del=1.0000  stale_p=0.0055  rank=1.0
+           gate 1.00  q_clean=0.9880  q_edit=1.0000  q_del=1.0000  stale_p=0.0002  rank=90.1
+   no memory readout  q_clean=0.0000  q_edit=0.0000  q_del=1.0000  stale_p=0.0001  rank=122.3
+      erase disabled  q_clean=0.9922  q_edit=1.0000  q_del=0.0104  stale_p=0.9681  rank=0.0
+wrote /root/autodl-tmp/ear-delscored/inter_del_s1_dk32.json
+      case       loss      acc   n
+   trained    0.04027   0.9953   768
+ gate 0.00    1.38900   0.7487   768
+ gate 0.25    0.54975   0.7680   768
+ gate 0.50    0.10118   0.9953   768
+ gate 0.75    0.04416   0.9956   768
+ gate 0.90    0.03971   0.9951   768
+ gate 1.00    0.03914   0.9940   768
+wrote /root/autodl-tmp/ear-delscored/lossprobe_del_s1_dk32.json
+loss range over g in [0,1]: 1.349855
+{
+ "L1_addr": 0.246266751550138,
+ "L1_addr_max": 0.3255128860473633,
+ "L1_gate": 0.24009242933243513,
+ "L1_gate_max": 0.3166513442993164,
+ "cell": "edit_gated",
+ "ckpt": "/root/autodl-tmp/ear-delscored/del_s1_dk64.pt",
+ "decay_gate_mean": 0.04617899772711098,
+ "decay_gate_mean_max": 0.06409215927124023,
+ "dk": 64,
+ "dv": 128,
+ "erase_gate_max": 0.9870654605329037,
+ "erase_gate_max_max": 0.991182804107666,
+ "erase_gate_mean": 0.9750321246683598,
+ "erase_gate_mean_max": 0.977253794670105,
+ "erase_gate_min": 0.969101395457983,
+ "erase_gate_min_max": 0.9711812138557434,
+ "g_max": 0.9780918955802917,
+ "g_max_max": 0.983790934085846,
+ "g_mean": 0.9748219363391399,
+ "g_mean_max": 0.9770612716674805,
+ "g_min": 0.9718820638954639,
+ "g_min_max": 0.9743002653121948,
+ "m": 6.0,
+ "m_max": 6,
+ "mu": 0.24054818134754896,
+ "mu_max": 0.319408655166626,
+ "multiplier": 1.0035821722180889,
+ "multiplier_max": 1.0110191117171643,
+ "n_batch": 16,
+ "resid_addr": 1.6891392196072275e-07,
+ "resid_addr_max": 2.411546518032992e-07,
+ "resid_gate": 0.028117954381741583,
+ "resid_gate_max": 0.031143035739660263,
+ "resid_gate_pred": 0.028117969632148743,
+ "resid_gate_pred_max": 0.03114306926727295,
+ "slope_addr": 0.24626679501187038,
+ "slope_addr_max": 0.32551296365570154,
+ "slope_gate": 0.24704435206659311,
+ "slope_gate_max": 0.3255768118215781,
+ "step": 4000,
+ "write_gate_mean": 0.8832495026290417,
+ "write_gate_mean_max": 0.9130581617355347
+}
+wrote /root/autodl-tmp/ear-delscored/align_del_s1_dk64.json

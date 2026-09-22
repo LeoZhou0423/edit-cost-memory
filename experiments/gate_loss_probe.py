@@ -38,13 +38,16 @@ from dcgr3d.data import make_ear  # noqa: E402
 
 
 @torch.no_grad()
-def eval_loss(model, a, device, seed, batch=32, repeats=3):
+def eval_loss(model, a, device, seed, batch=32, repeats=3, del_target="none"):
     """Query-slot cross-entropy -- the training objective -- plus its accuracy.
 
-    Deletion probes carry no target, so they are excluded: we want the loss the
-    optimiser actually sees, and that loss says nothing about the erased item.
+    With ``del_target="none"`` (the paper's protocol) a deletion probe has no
+    target and is excluded: we want the loss the optimiser actually sees, and
+    that loss says nothing about the erased item.  With ``del_target="noise"``
+    the deletion probes are supervised with the marker token and are included,
+    which is the loss of the deletion-scored arm.
     """
-    gen = make_ear(seed=seed)
+    gen = make_ear(seed=seed, del_target=del_target)
     model.eval()
     old = getattr(model, "alpha", None)
     if old is not None:
@@ -58,7 +61,7 @@ def eval_loss(model, a, device, seed, batch=32, repeats=3):
         for b in range(batch):
             for q in range(meta["query_slot"].shape[1]):
                 slot = int(meta["query_slot"][b, q])
-                if int(meta["query_kind"][b, q]) == 2:
+                if int(meta["query_kind"][b, q]) == 2 and del_target != "noise":
                     continue
                 t = int(tgt[b, slot])
                 if t < 0:
@@ -82,6 +85,8 @@ def main():
     ap.add_argument("--batch", type=int, default=32)
     ap.add_argument("--repeats", type=int, default=3)
     ap.add_argument("--gates", default="0.0,0.25,0.5,0.75,0.9,1.0")
+    ap.add_argument("--del-target", default="none", choices=["none", "noise"],
+                    help="must match the arm the checkpoint was trained in")
     args = ap.parse_args()
     device = "cuda" if torch.cuda.is_available() else "cpu"
     seeds = [int(s) for s in args.seeds.split(",")]
@@ -94,7 +99,8 @@ def main():
     for gate in [None] + gates:
         cell.erase_override = gate
         runs = [eval_loss(model, a, device, s, batch=args.batch,
-                          repeats=args.repeats) for s in seeds]
+                          repeats=args.repeats, del_target=args.del_target)
+                for s in seeds]
         loss = float(np.mean([r["loss"] for r in runs]))
         acc = float(np.mean([r["acc"] for r in runs]))
         lo = float(np.min([r["loss"] for r in runs]))

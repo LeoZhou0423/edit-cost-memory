@@ -89,7 +89,7 @@ def make_mqar(seed=None, disjoint=False):
     return gen
 
 
-def make_ear(seed=None, disjoint=True):
+def make_ear(seed=None, disjoint=True, del_target="none"):
     """Return a generator for *edited associative recall* (EAR).
 
     The sequence is the canonical MQAR layout with an edit region inserted
@@ -110,9 +110,18 @@ def make_ear(seed=None, disjoint=True):
 
     Returns ``(seq, target, ops, meta)`` where ``meta`` carries, per row, the
     index of each stored key inside the sequence, its current value, and whether
-    it was edited, deleted or untouched.  The targets at query slots are the
+    it was edited, deleted or untouched.      The targets at query slots are the
     current value of the queried key; a query on a deleted key is not supervised
     and is scored separately as "did the stale value stay suppressed".
+
+    ``del_target``
+        ``"none"`` (default) leaves deleted-key queries unsupervised, which is
+        the protocol used throughout the paper --- and the reason the erase gate
+        receives no gradient from deletion.  ``"noise"`` supervises them with the
+        reserved marker token ``NOISE``: the correct answer to "what is the
+        value of a key that was deleted" becomes "nothing", so the deletion
+        probes *do* enter the training loss.  Running both is what separates
+        "the gate is unlearnable" from "this task simply never scores deletion".
     """
     sample_rs = np.random if seed is None else np.random.RandomState(seed)
     KEYS, VALS = mqar_token_pools(disjoint=disjoint)
@@ -184,6 +193,10 @@ def make_ear(seed=None, disjoint=True):
                 meta["query_kind"][b, q] = state[j]
                 if state[j] != 2:
                     tgt[b, slot] = current[j]
+                elif del_target == "noise":
+                    # the deleted pair has no value; the marker token is the
+                    # supervised answer, and it is never a key or a value
+                    tgt[b, slot] = NOISE
 
             meta["stored_keys"][b] = keys
             meta["current"][b] = current

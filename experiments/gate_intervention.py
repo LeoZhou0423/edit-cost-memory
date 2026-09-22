@@ -35,6 +35,8 @@ import numpy as np
 import torch
 
 from dcgr3d.data import VOCAB, make_ear
+
+NOISE = VOCAB - 1
 from dcgr3d.model import MemLM14
 
 
@@ -53,13 +55,13 @@ def build(ckpt_path, device="cpu"):
 def eval_once(model, a, device, seed, batch=32, repeats=3, alpha=None,
               disable_erase=False):
     """Token-level EAR metrics, with the two controls the task was missing."""
-    gen = make_ear(seed=seed)
+    gen = make_ear(seed=seed, del_target=a.get("del_target", "none"))
     prev_alpha = getattr(model, "alpha", None)
     if alpha is not None and prev_alpha is not None:
         model.alpha = alpha
     hit = {"clean": 0, "edited": 0}
     tot = {"clean": 0, "edited": 0}
-    del_hits, del_ranks, del_probs = [], [], []
+    del_hits, del_ranks, del_probs, del_tok = [], [], [], []
     for _ in range(repeats):
         seq, tgt, wmask, ops, meta = gen(batch, a["m"], a["seq_len"], device,
                                          a["n_edit"])
@@ -80,6 +82,7 @@ def eval_once(model, a, device, seed, batch=32, repeats=3, alpha=None,
                     del_ranks.append(float((logits[b, slot]
                                             > logits[b, slot, stale]).sum()))
                     del_probs.append(float(probs[b, slot, stale]))
+                    del_tok.append(int(int(pred[b, slot]) == NOISE))
                 elif kind == 1:
                     tot["edited"] += 1
                     hit["edited"] += int(int(pred[b, slot]) == int(tgt[b, slot]))
@@ -93,12 +96,14 @@ def eval_once(model, a, device, seed, batch=32, repeats=3, alpha=None,
            "q_del": (sum(del_hits) / len(del_hits)) if del_hits else float("nan"),
            "stale_prob": float(np.mean(del_probs)) if del_probs else float("nan"),
            "stale_rank": float(np.median(del_ranks)) if del_ranks else float("nan"),
+           "q_del_token": (sum(del_tok) / len(del_tok)) if del_tok else float("nan"),
            "n_del": len(del_hits)}
     return out
 
 
 def summarise(runs):
-    keys = ("q_clean", "q_edited", "q_del", "stale_prob", "stale_rank")
+    keys = ("q_clean", "q_edited", "q_del", "stale_prob", "stale_rank",
+            "q_del_token")
     out = {}
     for k in keys:
         v = [r[k] for r in runs]

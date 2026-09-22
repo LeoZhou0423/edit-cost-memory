@@ -9,11 +9,16 @@
 set -u
 ROOT=${1:-/root/autodl-tmp/ear-seeds}
 PY=${2:-/root/miniconda3/bin/python}
+PREFIX=${3:-gated}          # gated = the paper's arm, del = the deletion-scored arm
 REPO=/root/autodl-tmp/dcgr3d-revision
 export PYTHONPATH=$REPO
 cd "$REPO"
 
-for pt in "$ROOT"/gated_s*_dk*.pt; do
+# the loss probe must be told whether deletion was scored, or it will measure a
+# different objective from the one the checkpoint was trained under
+if [ "$PREFIX" = "del" ]; then DELTGT=noise; else DELTGT=none; fi
+
+for pt in "$ROOT"/${PREFIX}_s*_dk*.pt; do
   [ -f "$pt" ] || continue
   tag=$(basename "$pt" .pt)
   if [ ! -f "$ROOT/align_${tag}.json" ]; then
@@ -28,7 +33,8 @@ for pt in "$ROOT"/gated_s*_dk*.pt; do
   fi
   if [ ! -f "$ROOT/lossprobe_${tag}.json" ]; then
     "$PY" "$REPO/experiments/gate_loss_probe.py" \
-        --ckpt "$pt" --out "$ROOT/lossprobe_${tag}.json" >> "$ROOT/analysis.log" 2>&1 \
+        --ckpt "$pt" --del-target "$DELTGT" \
+        --out "$ROOT/lossprobe_${tag}.json" >> "$ROOT/analysis.log" 2>&1 \
         || echo "FAIL lossprobe ${tag}"
   fi
 done
