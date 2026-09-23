@@ -1,7 +1,7 @@
 # The Cost of an Edit in a Fixed-State Associative Memory
 
 Code and run records for the manuscript *The Cost of an Edit in a Fixed-State
-Associative Memory* (Ziheng Zhou, working manuscript, September 2026).
+Associative Memory* (anonymous, under double-blind review).
 
 The paper asks what governs the price of editing one association out of a
 fixed-state outer-product memory. Its objects are a two-number cost --- the
@@ -93,5 +93,5 @@ MIT. See `LICENSE`.
 
 ## Citation
 
-Ziheng Zhou. *The Cost of an Edit in a Fixed-State Associative Memory.* Working
-manuscript, 2026.
+Anonymous. *The Cost of an Edit in a Fixed-State Associative Memory.* Under
+double-blind review, 2026.
